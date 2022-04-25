@@ -42,7 +42,7 @@ contract BankToken is ERC20 {
     event Withdrawal(address indexed to , uint256 value);
 
     constructor( uint256 _tDposit )  payable ERC20("ATRAC", "MTK") {
-       //_mint(msg.sender, 10000 * 10 ** decimals());
+       _mint(msg.sender, 10000 * 10 ** decimals());
         // initial assignments 
         owner=msg.sender; // assign the contract deployer to be Owner
         require(msg.value >0 ,"Invalid reward pool's value");
