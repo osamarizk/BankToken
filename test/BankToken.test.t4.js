@@ -1,6 +1,3 @@
-import { tokens, INVALID_VALUE, INVALID_ADDRESS } from './helpers';
-import { BN, ether, expectEvent, expectRevert, time } from 'openzeppelin-test-helpers';
-
 const BankToken = artifacts.require('BankToken');
 
 require('chai')
@@ -9,6 +6,7 @@ require('chai')
 
 // Wait Time configuration
 const waiteTime = t => new Promise(resolve => setTimeout(resolve, t));
+
 
 contract('BankToken', ([deployer, user1, user2]) => {
 

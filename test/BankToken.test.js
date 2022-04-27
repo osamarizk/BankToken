@@ -17,7 +17,7 @@ contract('BankToken', ([deployer, user1, user2]) => {
     let bnktoken; // instant of contract
     let bnkBalance; // Bank Balance
     let totalDeposit; // total Deposits
-    const tDeposit = '30' // // Deposit Period
+    const tDeposit = '30' // Deposit Period
     let rewardT23; // Reward for Period t2 to t3
     let rewardT34; // Reward for Period t3 to t4
     let r1Rem; // R1 Remaining
