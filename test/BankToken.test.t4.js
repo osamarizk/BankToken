@@ -5,7 +5,7 @@ require('chai')
     .use(require('chai-as-promised'))
     .should()
 
-// Wait Time configuration
+// Wait Time Setup
 
 const waiteTime = t => new Promise(resolve => setTimeout(resolve, t));
 
