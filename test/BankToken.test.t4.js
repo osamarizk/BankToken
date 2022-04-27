@@ -1,11 +1,14 @@
 const BankToken = artifacts.require('BankToken');
 
+
 require('chai')
     .use(require('chai-as-promised'))
     .should()
 
 // Wait Time configuration
+
 const waiteTime = t => new Promise(resolve => setTimeout(resolve, t));
+
 
 
 contract('BankToken', ([deployer, user1, user2]) => {
@@ -14,9 +17,9 @@ contract('BankToken', ([deployer, user1, user2]) => {
     let bnkBalance;
     let t0Deploy; // contract deployment time
     let totalDeposit; // total Deposits
-    const tDeposit = '30' // // Deposit Period
-    let rewardT23;
-    let rewardT34;
+    const tDeposit = '30' // Deposit Period
+    
+
     let rewardT4;
     let r1Rem; // R1 Remaining
     let result;
@@ -25,7 +28,6 @@ contract('BankToken', ([deployer, user1, user2]) => {
     let amount3;
     let amount4;
     let totalDps;
-
     const rToken = 1000; // Token reward Pool Amount
     const t2Dposit = tDeposit * 2 // 2T
     const t3Dposit = tDeposit * 3; // 3T
